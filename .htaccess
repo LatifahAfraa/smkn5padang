@@ -1,0 +1,20 @@
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php)
+RewriteRule ^tentang-kami$ index.php?page=tentang_kami [L]
+RewriteRule ^berita$ index.php?page=berita [L]
+RewriteRule ^search?(.*)$ index.php?page=berita&cari=$1 [L,QSA]
+RewriteRule ^berita-([0-9]+)$ index.php?page=berita_tunggal&id=$1 [L]
+RewriteRule ^galeri$ index.php?page=galeri [L]
+RewriteRule ^galeri-([0-9]+)$ index.php?page=galeri_tunggal&id=$1 [L]
+RewriteRule ^pengumuman$ index.php?page=pengumuman [L]
+RewriteRule ^pengumuman-([0-9]+)$ index.php?page=pengumuman_tunggal&id=$1 [L]
+RewriteRule ^cari?(.*)$ index.php?page=pengumuman&cari=$1 [L,QSA]
+RewriteRule ^logout$ index.php?page=logout [L]
+ 
+
+
+Options All -Indexes
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
