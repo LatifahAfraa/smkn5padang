@@ -48,7 +48,7 @@ $row = mysqli_fetch_array($query);
                 <div class="form-group row">
                 <label class="col-sm-2 col-form-label" >Foto</label>
                   <div class="col-sm-10">
-                  <img src="Pimpinan/img/<?php echo $row['gambar'] ?>" width="180"></br><br>
+                  <img src="pimpinan/img/<?php echo $row['gambar']  ?>" width="180"></br><br>
                   <input type="hidden" name="nmgmb" value="<?php echo $row['gambar']; ?>">
 
                   <input type="checkbox" name="ubah_gambar" value="true"> Ceklis jika ingin mengubah foto<br><br>
