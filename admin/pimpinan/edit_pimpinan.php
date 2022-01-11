@@ -95,7 +95,7 @@ $row = mysqli_fetch_array($query);
 	}else{
 		$foto = $_POST['nmgmb'];
 
-			$query2 = mysqli_query($konek, "UPDATE pimpinan SET nama='$nama', gambar='$gambar' WHERE id='$id'");
+			$query2 = mysqli_query($konek, "UPDATE pimpinan SET nama='$nama', gambar='$foto' WHERE id='$id'");
 			
 			if($query2){
 				echo '<script>alert("Data Berhasil Diubah !!!");
