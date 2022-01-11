@@ -52,7 +52,7 @@ $row = mysqli_fetch_array($query);
                   <input type="hidden" name="nmgmb" value="<?php echo $row['gambar']; ?>">
 
                   <input type="checkbox" name="ubah_gambar" value="true"> Ceklis jika ingin mengubah foto<br><br>
-                  <input type="file" name="foto" >
+                  <input type="file" name="gambar" >
                 </div>
               </div>
               <!-- /.box-body -->
