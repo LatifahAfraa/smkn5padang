@@ -22,14 +22,14 @@ $r = mysqli_fetch_array($q);
           <div class="post-image">
               
             <img class="img-fluid w-200" src="admin/pengumuman/img/<?php echo $r['gambar'] ?>" alt="post-image"
-              style="width:750em; height:50em">
+            style="width:30em; height:20em">
           </div>
           <!-- Post Content -->
           <div class="post-content">
             <h3><?php echo $r['judul'];?></h3>
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Admin</a>&nbsp;/
+                <a href="#">Admin</a>&nbsp;
               </li>
               <li class="list-inline-item">
                 <a><?php echo $r['isi'];?></a>&nbsp;

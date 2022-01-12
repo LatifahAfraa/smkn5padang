@@ -21,7 +21,7 @@ $r = mysqli_fetch_array($q);
         <article class="post">
           <div class="post-image">
             <img class="img-fluid w-200" src="admin/berita/img/<?php echo $r['gambar'] ?>" alt="post-image"
-              style="width:500em; height:50em">
+              style="width:30em; height:20em">
           </div>
           <!-- Post Content -->
           <div class="post-content">
@@ -85,7 +85,7 @@ while ($row=mysqli_fetch_array($query))
               <li class="widget-post-list-item">
                 <div class="widget-post-image">
                   <a href="berita-">
-                    <img src="admin/berita/img/<?php echo $row['gambar'] ?>" alt="post-img">
+                    <img src="admin/berita/img/<?php echo $row['gambar'] ?>" alt="post-img"  style="width:10em; height:10em">
                   </a>
                 </div>
                 <div class="widget-post-content">
